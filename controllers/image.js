@@ -1,5 +1,5 @@
 // Your PAT (Personal Access Token) can be found in the Account's Security section
-const PAT = "b2bc7c30fc5f44429e91df37c6307c20";
+const PAT = process.env.PAT;
 
 // Specify the correct user_id/app_id pairings
 // Since you're making inferences outside your app's scope
