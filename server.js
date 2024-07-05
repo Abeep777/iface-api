@@ -25,7 +25,11 @@ const db = knex({
 db.select("*").from("users");
 
 app.use(bodyParser.json()); //sending data from frontend
-app.use(cors());
+app.use(cors({
+        origin: "https://iface-app-pro.onrender.com"
+    }
+))
+app.options('*', cors())
 
 app.get("/", (req, res) => {
   res.send("success");
